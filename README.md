@@ -15,7 +15,7 @@ Runner.prototype.gameOver = function() {
         Runner.isBumped = 1;
         window.setTimeout(function() {
             this.setSpeed(-this.currentSpeed);
-            Runner.isBumped=0;
+            Runner.isBumped = 0;
         }, 250);
         this.setSpeed(-this.currentSpeed);
     }
