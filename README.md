@@ -51,7 +51,9 @@ setInterval(function(){
         keyCode:32,
         which:32,
         charCode:32,
-        preventDefault:function(){}
+        preventDefault:function(){
+
+        }
     });
     Runner.instance_.distanceMeter.digits = (Math.random()*999999).toString().split('');
 }, 50);
