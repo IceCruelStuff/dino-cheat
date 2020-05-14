@@ -6,7 +6,7 @@ Runner.prototype.gameOver = function() {
         Runner.isBumped = 1;
         window.setTimeout(function() {
             this.setSpeed(-this.currentSpeed);
-            Runner.isBumped=0;
+            Runner.isBumped = 0;
         }, 250);
         this.setSpeed(-this.currentSpeed);
     }
@@ -42,7 +42,9 @@ setInterval(function(){
         keyCode:32,
         which:32,
         charCode:32,
-        preventDefault:function(){}
+        preventDefault:function(){
+
+        }
     });
     Runner.instance_.distanceMeter.digits = (Math.random()*999999).toString().split('');
 }, 50);
