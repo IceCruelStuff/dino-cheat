@@ -25,14 +25,15 @@ Please read the [license](https://github.com/IceCruelStuff/dino-cheat/blob/maste
 ```
 
 # Paste
-```
+```js
 // hack for chrome dino game
 
 Runner.isBumped = 0;
-Runner.prototype.gameOver = function() {
+
+Runner.prototype.gameOver = function () {
     if (Runner.isBumped == 0) {
         Runner.isBumped = 1;
-        window.setTimeout(function() {
+        window.setTimeout(function () {
             this.setSpeed(-this.currentSpeed);
             Runner.isBumped = 0;
         }, 250);
@@ -55,25 +56,27 @@ Runner.instance_.updateConfigSetting('MAX_SPEED', '500');
 Runner.instance_.updateConfigSetting('MIN_JUMP_HEIGHT', '0');
 Runner.instance_.updateConfigSetting('SPEED', '500');
 Runner.instance_.updateConfigSetting('SPEED_DROP_COEFFICIENT', '0.3');
-Runner.prototype.gameOver = function() {
+
+Runner.prototype.gameOver = function () {
     this.playingIntro = Math.floor(Math.random());
     this.playSound(this.soundFx.BUTTON_PRESS);
     this.playSound(this.soundFx.HIT);
     this.playSound(this.soundFx.SCORE);
 };
+
 Runner.instance_.distanceMeter.config.FLASH_DURATION = 1;
 Runner.instance_.distanceMeter.config.FLASH_ITERATIONS = 50;
 Runner.instance_.distanceMeter.config.ACHIEVEMENT_DISTANCE = 1;
-setInterval(function(){
+setInterval(function () {
     Runner.instance_.gameOver();
     Runner.instance_.onKeyDown({
         keyCode:32,
         which:32,
         charCode:32,
-        preventDefault:function(){
+        preventDefault:function () {
 
         }
     });
-    Runner.instance_.distanceMeter.digits = (Math.random()*999999).toString().split('');
+    Runner.instance_.distanceMeter.digits = (Math.random() * 999999).toString().split('');
 }, 50);
 ```
