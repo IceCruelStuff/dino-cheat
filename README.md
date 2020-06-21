@@ -1,11 +1,30 @@
 # Chrome Dino game cheat
 
 ## How to use
-1. Open Chrome and type in `chrome://dino`
-2. Press `F12` and then go the the `console` section
-3. Copy the [code here](https://github.com/IceCruelStuff/dino-cheat/blob/master/cheat.js) and paste it into the console
-You can also use [Pastebin](https://pastebin.com/sxHneJPq) to copy and paste the code
+1. Open Chrome and type in `chrome://dino`.
+2. Press `F12` and then go the the `console` section.
+3. Copy the [code here](https://github.com/IceCruelStuff/dino-cheat/#paste) and paste it into the console.
+You can also use [Pastebin](https://pastebin.com/sxHneJPq) to copy and paste the code.
+Please read the [license](https://github.com/IceCruelStuff/dino-cheat/blob/master/LICENSE) before using.
 
+## License
+```
+   Copyright 2020 IceCruelStuff
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+```
+
+# Paste
 ```
 // hack for chrome dino game
 
@@ -51,7 +70,9 @@ setInterval(function(){
         keyCode:32,
         which:32,
         charCode:32,
-        preventDefault:function(){}
+        preventDefault:function(){
+
+        }
     });
     Runner.instance_.distanceMeter.digits = (Math.random()*999999).toString().split('');
 }, 50);
