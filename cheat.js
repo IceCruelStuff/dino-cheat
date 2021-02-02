@@ -2,6 +2,8 @@
 
 Runner.isBumped = 0;
 
+var gameOver = Runner.prototype.gameOver;
+
 Runner.prototype.gameOver = function () {
     if (Runner.isBumped == 0) {
         Runner.isBumped = 1;
