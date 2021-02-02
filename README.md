@@ -1,6 +1,6 @@
 # Chrome Dino game cheat
 
-## How to use
+## Usage
 1. Open Chrome and type in `chrome://dino`.
 2. Press `F12` and then go the the `console` section.
 3. Copy the [code here](https://github.com/IceCruelStuff/dino-cheat/#paste) and paste it into the console.
@@ -24,7 +24,7 @@ Please read the [license](https://github.com/IceCruelStuff/dino-cheat/blob/maste
    limitations under the License.
 ```
 
-# Paste
+## Paste
 ```js
 // hack for chrome dino game
 
