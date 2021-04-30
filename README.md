@@ -2,7 +2,7 @@
 
 ## Usage
 1. Open Chrome and type in `chrome://dino`.
-2. Press `F12` and then go the the `console` section.
+2. Press `F12` or `Ctrl + Shift+ I` and then go the the `Console` section.
 3. Copy the code below and paste it into the `console`.
 ```js
 // hack for chrome dino game
